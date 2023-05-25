@@ -36,9 +36,8 @@
     transform: rotate(360deg);
   }
 }
-.iconoCarrito {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+.imagenlogo {
+  height: 10px;
+  font-size: 10px;
 
 }
