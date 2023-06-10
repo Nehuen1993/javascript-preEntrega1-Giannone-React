@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,10 +14,11 @@ const NavBar = () => {
       <form className="container-fluid justify-content-start">
         
         <img src={logo} height="40px" width="40px"></img>
-        <button className="btn btn-outline-success me-2" type="button" href="#trenDelantero">Tren Delantero</button>
-        <button className="btn btn-outline-success me-2" type="button" href="#motor">Motor</button>
-        <button className="btn btn-outline-success me-2" type="button" href="#frenos">Frenos</button>
-        <button className="btn btn-outline-success me-2" type="button" href="#inyeccion">Inyeccion</button>
+        <NavLink className="btn btn-outline-success me-2" to="/">Home</NavLink>
+        <NavLink className="btn btn-outline-success me-2" to="/trenDelantero">Tren Delantero</NavLink>
+        <NavLink className="btn btn-outline-success me-2" to="/motor">Motor</NavLink>
+        <NavLink className="btn btn-outline-success me-2" to="/frenos">Frenos</NavLink>
+        
         <CartWidget />
       </form>
     
