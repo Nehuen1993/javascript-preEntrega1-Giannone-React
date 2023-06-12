@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { getUser } from "../../datos/productos";
+import { getProductos } from "../../datos/productos";
 import { Table } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    getUser().then((productos) => {
+    getProductos().then((productos) => {
       setProductos(productos);
     });
   }, []);
@@ -27,7 +28,11 @@ const ProductList = () => {
         <tbody>
           {productos.map((producto) => (
             <tr key={producto.id}>
-                 <td>{producto.nombre}</td>
+                 <td>
+                 <Link to={`/productos/${producto.id}`}>
+                 {producto.nombre}
+                 </Link>
+                 </td>
               <td>
                 <img src={producto.imagen} alt={`Imagen ${producto.id + 1}`} />
               </td>

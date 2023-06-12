@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from 'react';
 import NavBar from './component/NavBar';
 import ProductList, {  } from "./pages/home";
+import DetalleProducto, {  } from "./pages/detalleproductos";
+import ProductsMotor, {  } from "./pages/motor";
 import ItemListContainer from './component/ItemListContainer';
 import { RiMotorbikeFill } from "react-icons/ri";
 
@@ -13,8 +15,9 @@ function App() {
     <NavBar />
       <Routes>
           <Route path="/" element={<ProductList/>}/>
+          <Route path="/productos/:id" element={<DetalleProducto/>}/>
           <Route path="/suspencion" element={<suspencion/>}/>
-          <Route path="/motor" element={<motor/>}/>
+          <Route path="/motor" element={<ProductsMotor/>}/>
           <Route path="/trendelantero" element={<trendelantero/>}/>
   
       </Routes>
