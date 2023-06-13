@@ -12,8 +12,21 @@ export const getProducto = (id) => {
     });
 };
 
-export   const getClase = (clase) => {
+/*export   const getClase = (clase) => {
     return new Promise((resolve, reject) => {
-        resolve (productos.filter((producto) => producto.clase === clase));
+        resolve (productos.filter((productos) => productos.clase === clase));
+    });
+};*/
+
+
+
+export   const getClase = async (clase) => {
+    return new Promise((resolve, reject) => {
+        if (clase) {
+            resolve (productos.filter((productos) => productos.clase === clase));
+        } else {
+            resolve (productos)
+        }      
     });
 };
+

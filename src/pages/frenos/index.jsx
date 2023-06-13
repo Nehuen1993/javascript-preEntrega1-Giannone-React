@@ -3,7 +3,7 @@ import { getClase } from "../../datos/productos";
 import { Table } from 'react-bootstrap';
 import { Link, useParams} from "react-router-dom";
 
-const ClaseSuspencion = () => {
+const ClaseFrenos = () => {
     const {clase} = useParams ();
     const [productos, setClase] = useState([]);
   
@@ -48,4 +48,4 @@ const ClaseSuspencion = () => {
       );
     };
     
-export default ClaseSuspencion;
+export default ClaseFrenos;

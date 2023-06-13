@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
-import logo from '../../public/imagenes/logo.png';
+import logo from './imagenes/logo.png';
 
 
 
@@ -15,7 +15,7 @@ const NavBar = () => {
         
         <img src={logo} height="40px" width="40px"></img>
         <NavLink className="btn btn-outline-success me-2" to="/">Home</NavLink>
-        <NavLink className="btn btn-outline-success me-2" to="/trenDelantero">Tren Delantero</NavLink>
+        <NavLink className="btn btn-outline-success me-2" to="/suspencion">Suspencion</NavLink>
         <NavLink className="btn btn-outline-success me-2" to="/motor">Motor</NavLink>
         <NavLink className="btn btn-outline-success me-2" to="/frenos">Frenos</NavLink>
         
