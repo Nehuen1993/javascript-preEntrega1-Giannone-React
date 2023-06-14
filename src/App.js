@@ -18,9 +18,9 @@ function App() {
       <Routes>
           <Route path="/" element={<ProductList/>}/>
           <Route path="/productos/:id" element={<DetalleProducto/>}/>
-          <Route path="/:clase" element={<ClaseFrenos/>}/>
-          <Route path="/:clase" element={<ClaseMotor/>}/>
-          <Route path="/:clase" element={<ClaseSuspencion/>}/>
+          <Route path="/frenos" element={<ClaseFrenos/>}/>
+          <Route path="/motor" element={<ClaseMotor/>}/>
+          <Route path="/suspencion" element={<ClaseSuspencion/>}/>
   
       </Routes>
     </BrowserRouter>
