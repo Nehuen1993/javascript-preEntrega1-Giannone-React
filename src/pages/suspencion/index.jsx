@@ -4,11 +4,11 @@ import { Table } from 'react-bootstrap';
 import { Link, useParams} from "react-router-dom";
 
 const ClaseSuspencion = () => {
-    const {clase} = useParams ();
+
     const [productos, setClase] = useState([]);
   
     useEffect(() => {
-      getClase(clase).then((productos) => {
+      getClase("suspencion").then((productos) => {
         setClase(productos);
       });
     }, []);
