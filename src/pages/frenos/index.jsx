@@ -4,11 +4,11 @@ import { Table } from 'react-bootstrap';
 import { Link, useParams} from "react-router-dom";
 
 const ClaseFrenos = () => {
-    const {clase} = useParams ();
+    
     const [productos, setClase] = useState([]);
   
     useEffect(() => {
-      getClase(clase).then((productos) => {
+      getClase("frenos").then((productos) => {
         setClase(productos);
       });
     }, []);
