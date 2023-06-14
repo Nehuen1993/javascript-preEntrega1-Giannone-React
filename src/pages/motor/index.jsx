@@ -4,11 +4,11 @@ import { Table } from 'react-bootstrap';
 import { Link, useParams} from "react-router-dom";
 
 const ClaseMotor = () => {
-    const {clase} = useParams ();
+    
     const [productos, setClase] = useState([]);
   
     useEffect(() => {
-      getClase(clase).then((productos) => {
+      getClase("motor").then((productos) => {
         setClase(productos);
       });
     }, []);
